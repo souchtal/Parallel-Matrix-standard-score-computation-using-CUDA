@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH --job-name="cuda"
+#SBATCH --output="cuda.out"
+#SBATCH -p gpu-shared
+#SBATCH --gres=gpu:k80:1
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=6
+#SBATCH --export=ALL
+
+#SBATCH -t 00:10:00
+
+
+./cuda

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#SBATCH --job-name="norm"
+#SBATCH --output="norm.out"
+#SBATCH --ntasks-per-node=1
+#SBATCH --export=ALL
+#SBATCH -t 00:10:00
+
+./norm
